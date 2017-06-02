@@ -1,0 +1,305 @@
+body {
+  background-color: #F2F1E8;
+  color: #131511;
+}
+
+header {
+  background-color: #FFFFFF;
+  color: #2B2F26;
+  margin: 0;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  position: fixed;
+  z-index: 1;
+}
+
+#site_header {
+  background-image: url(./images/bent-creek-logo.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 50px 60px;
+
+
+}
+
+ul {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav a {
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 20px;
+}
+
+nav a:hover {
+  color: #CD5D67;
+}
+
+nav a:active {
+  color: #968772;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  margin: 50px 0 10px 0px;
+  padding: 10px;
+}
+
+h2 {
+  font-family: 'Merriweather', serif;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 36px;
+  margin: 2px 2px 2px 2px;
+  padding: 5px;
+}
+
+h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 24px;
+  font-weight: lighter;
+  margin-left: 200px;
+  padding: 5px;
+}
+
+.top_row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+
+}
+
+#figure_1 {
+  flex-basis: 50%;
+  flex-grow: 2;
+}
+
+figcaption {
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  margin: auto;
+  padding: 10px;
+}
+/*#figure_2 {
+  flex-basis: 20%;
+}
+#figure_3 {
+  flex-basis: 20%;
+}*/
+
+.bottom_row: {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+}
+
+/*#figure_4: {
+  flex-basis: 20%;
+}
+#figure_5: {
+  flex-basis: 20%;
+}
+#figure_6: {
+  flex-basis: 40%;
+}
+#figure_7: {
+  flex-basis: 20%;
+}*/
+
+main {
+  width: auto;
+  padding: 5px;
+  position: relative;
+  z-index: 0;
+}
+
+#birdhouse {
+  float: left;
+  overflow: auto;
+  margin-left: 150px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+article {
+  display: block;
+  width: auto;
+  margin-left: 200px;
+  margin-right: 250px
+
+}
+
+p {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  text-align: left;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 20px;
+  border-left: 2px solid darkgray;
+  padding: 5px;
+}
+
+#page_divider {
+  background-image: url(./images/background-3.jpg);
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #FFFFFF;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  display: block;
+  margin: none;
+
+}
+
+table {
+  border-collapse: collapse;
+}
+
+
+thead {
+  border: 2px solid darkgray;
+  font-size: 18px;
+  text-align: center;
+}
+
+th,tr,td {
+  border: 2px solid black;
+  font-size: 18px;
+  width: auto;
+  padding: 10px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #E5CFBD;
+
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-align: right;
+  width: 20%;
+  margin-left: 1000px;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+#sidenote {
+  float: right;
+  overflow: auto;
+  margin-left: 900px;
+  margin-top: 0;
+  padding: 10px;
+}
+
+#news_body {
+  background-image: url(./images/background-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form {
+  background-color: white;
+  width: 800px;
+  min-height: auto;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 60px;
+  margin-bottom: 70px;
+  padding: 20px;
+  border: none;
+}
+
+.form_box {
+   position: absolute;
+       left:50%;
+        top:50%;
+  transform: translate(-50%, -50%);
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  border: none;
+}
+
+fieldset h1 {
+  font-size: 36px;
+  text-align: center;
+  padding: 20px;
+}
+
+fieldset h2 {
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+}
+
+label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+#nameInput, #emailInput {
+    box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 2px;
+    border: none;
+    border-bottom: 2px solid #968772;
+    background: transparent;
+    margin-bottom: 20px;
+}
+
+input: focus {
+  border-bottom: #967343;
+}
+
+#signupButton {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+  padding: 10px 20px;
+  background-color: #968772;
+  color: #F2F1E8;
+}
+
+#signupButton:hover {
+  background-color: #967343;
+}
+
+footer {
+  padding: 5px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bent Creek Ceramics - Newsletter</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body id="news_body">
+    <header id="site_header">
+
+      <nav class="main_navigation">
+        <ul>
+
+          <li><a href="../index.html">Home</a></li>
+          <li>
+            <a href="../about/index.html">About</a></li>
+          <li>
+            <a href="./index.html">Newsletter</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <div class="form_box">
+
+    <form action="/action_page.php" method="post">
+      <fieldset>
+          <h1>Sign Up for Our Weekly Newsletter</h1>
+          <h2>Stay up to date with events, activities, news, and specials.</h2>
+
+          <label for="name">Name</label>
+          <input type="text" id="nameInput" name="name" />
+          <br />
+          <label for="email">Email</label>
+          <input type="email" id="emailInput" name="email">
+          <input type="submit" id="signupButton" value="Submit" />
+      </fieldset>
+    </form>
+    </div>
+
+    <script type="text/javascript">
+  var nameInput = document.getElementById('nameInput');
+  var emailInput = document.getElementById('emailInput');
+  var signupButton = document.getElementById('signupButton');
+  signupButton.addEventListener('click', function(e) {
+    var nameVal = nameInput.value;
+    var emailVal = emailInput.value;
+    if (nameVal && emailVal) {
+      alert('Thanks for signing up, ' + nameVal + '. Newsletters will be sent to ' + emailVal);
+      nameInput.value = "";
+      emailInput.value = "";
+    } else {
+      alert('We would love for you to sign up, please provide both your name and email address.');
+    }
+  });
+  </script>
+
+</body>
+</html>
